@@ -1,546 +1,562 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-    <title>CS 335: Machine Learning</title> 
-    <link href="../../style.css" rel="stylesheet" type="text/css" /> 
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head> 
-
-<body> 
-    <div class="maincontainer">
-        <div class="header">
-            <h1>CS 335: Machine Learning</h1>
-        </div>
-
-<!--  Course Description  -->
-    <hr/>
-    <h1>Course Description</h1>
-        <p> Description 
-        </p>
-
-<!--  Logistics  -->
-    <hr/>
-    <h1>Logistics</h1>
-        <p> 
-        <b>Lectures:</b> Tues, Thurs 11:30am-12:45pm
-        <br>
-        <b>Fourth Hour:</b> Fri 8:30am-9:20am
-        <br>
-        <b>Room:</b> TBD
-        <br>
-        <b>Textbook:</b> TBD
-        <br>
-        <b>Office hours:</b> Tues 1-3pm, Fri 9:30-11:30am, Clapp 200
-        <br>
-        <b>Piazza</b>: <a href="https://www.piazza.com/mtholyoke/spring2020/cs335/home">https://www.piazza.com/mtholyoke/spring2020/cs335/home</a>
-        <br>
-        <b>Gradescope</b>: <a href="https://www.gradescope.com/courses/76996">https://www.gradescope.com/courses/76996</a>
-        </p>
-
-<!--  Learning Goals  -->
-<hr/>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="maincontainer">
+<div class="header">
+<h1>CS 335: Machine Learning</h1>
+</div>
+<!--  Course Description  --><hr />
+<h1>Course Description</h1>
+<p>Description</p>
+<!--  Logistics  --><hr />
+<h1>Logistics</h1>
+<p><strong>Lectures:</strong> Tues, Thurs 11:30am-12:45pm <br /> <strong>Fourth Hour:</strong> Fri 8:30am-9:20am <br /> <strong>Room:</strong> TBD <br /> <strong>Textbook:</strong> TBD <br /> <strong>Office hours:</strong> Tues 1-3pm, Fri 9:30-11:30am, Clapp 200 <br /> <strong>Piazza</strong>: <a href="https://www.piazza.com/mtholyoke/spring2020/cs335/home">https://www.piazza.com/mtholyoke/spring2020/cs335/home</a> <br /> <strong>Gradescope</strong>: <a href="https://www.gradescope.com/courses/76996">https://www.gradescope.com/courses/76996</a></p>
+<!--  Learning Goals  --><hr />
 <h1>Learning Goals</h1>
-    The general learning goals of this course are to: 
-        <li>Learn how to design basic machine learning algorithms. </li> 
-        <li>Identify and understand specific, widely-used machine learning algorithms.</li>  
-        <li>Learn how to apply machine learning algorithms to read data and evaluate the algorithms' performance. </li> 
-
-    </br>
-    More concretely, by the end of the semester, the students will be expected to have mastered <b>fundamental concepts in machine learning</b> including:
-        <li>Derive analytical solutions for mathematical fundamentals of ML (partial derivatives, matrix multiplication, etc.)</li>  
-        <li>Identify the relationship between regularization and training size on training and test accuracy</li>
-        <li>Derive and implement learning algorithms</li>
-        <li>Implement a backpropagation algorithm by hand</li>
-        <li>Understand and articulate bias-variance tradeoff</li>
-        
-    </br>
-    In regards to <b>application of machine learning</b> to a data science projects, students will leave the course able to: 
-        <li>Identify important machine learning problems</li>
-        <li>Verbally explain problems</li>
-        <li>Produce technically-proficient writing</li>
-        <li>Implement machine learning tools on real data and evaluate performance</li>
-    
-
-<!--  Grading  -->
-<hr/>
+The general learning goals of this course are to:
+<ul>
+<li>Learn how to design basic machine learning algorithms.</li>
+<li>Identify and understand specific, widely-used machine learning algorithms.</li>
+<li>Learn how to apply machine learning algorithms to read data and evaluate the algorithms' performance.</li>
+</ul>
+More concretely, by the end of the semester, the students will be expected to have mastered <strong>fundamental concepts in machine learning</strong> including:
+<ul>
+<li>Derive analytical solutions for mathematical fundamentals of ML (partial derivatives, matrix multiplication, etc.)</li>
+<li>Identify the relationship between regularization and training size on training and test accuracy</li>
+<li>Derive and implement learning algorithms</li>
+<li>Implement a backpropagation algorithm by hand</li>
+<li>Understand and articulate bias-variance tradeoff</li>
+</ul>
+In regards to <strong>application of machine learning</strong> to a data science projects, students will leave the course able to:
+<ul>
+<li>Identify important machine learning problems</li>
+<li>Verbally explain problems</li>
+<li>Produce technically-proficient writing</li>
+<li>Implement machine learning tools on real data and evaluate performance</li>
+</ul>
+<!--  Grading  --><hr />
 <h1>Grading</h1>
-    <li>Homeworks (4) &mdash; 40% </li>
-    <li> "Celebrations of learning" (2) &mdash; 20% </li>
-    <li> Project &mdash; 30% </li>
-    <li> Class engagement &mdash; 10% </li>
-
-<br>
-<br>
-The <b>project</b> grade (30%) is further broken down to: 
-    <li>Idea proposal &mdash; 2.5% </li>
-    <li>Paper selection &mdash; 2.5% </li>
-    <li> Literature review &mdash; 5% </li>
-    <li> Project plan &mdash; 5% </li>
-    <li> Final presentation (poster session) &mdash; 5% </li>
-    <li> Final report &mdash; 10% </li>
-
-<br>
-Class engagement grades are a composite of non-graded assignments including but not limited to: (a) in-class worksheets, (b) posting on Piazza, (c) writing up scribe notes. 
-
-<br>
-<br>
-Homework deadlines are strict. Homework not turned in ontime will NOT be accepted. 
-
-<br>
-<br>
-There will be two ``celebrations of learning." These will be in-class, closed-book exams.  
-
-
-<!--  Course schedule -->
-<hr/> 
+<ul>
+<li>Homeworks (4) &mdash; 40%</li>
+<li>"Celebrations of learning" (2) &mdash; 20%</li>
+<li>Project &mdash; 30%</li>
+<li>Class engagement &mdash; 10%</li>
+</ul>
+<br /> <br /> The <strong>project</strong> grade (30%) is further broken down to:
+<ul>
+<li>Idea proposal &mdash; 2.5%</li>
+<li>Paper selection &mdash; 2.5%</li>
+<li>Literature review &mdash; 5%</li>
+<li>Project plan &mdash; 5%</li>
+<li>Final presentation (poster session) &mdash; 5%</li>
+<li>Final report &mdash; 10%</li>
+</ul>
+<br /> Class engagement grades are a composite of non-graded assignments including but not limited to: (a) in-class worksheets, (b) posting on Piazza, (c) writing up scribe notes. <br /> <br /> Homework deadlines are strict. Homework not turned in ontime will NOT be accepted. <br /> <br /> There will be two ``celebrations of learning." These will be in-class, closed-book exams. <!--  Course schedule --><hr />
 <h1>Course schedule</h1>
-
-<table bordercolor=grey cellpadding=5 cellspacing=0 border=1>
-    <tr>
-    <th>week</th>
-    <th>date</th>
-    <th>day</th>
-    <th>topic</th>
-    <th>reading</th>
-    <th>homework</th>
-    <!-- <th><div align="center">project</div></th> -->
-    <th>project</th>
-    </tr>
-
-    <tr>
-    <td rowspan="3"><div align="center">Week 1</div></td>
-    <td>Jan 21</td>
-    <td align=center>Tu</td>
-    <td>Introduction and Syllabus</td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td rowspan="3" bgcolor=pink><div align="center">
-        Homework 0
-        <br>
-        Due: Fri Jan 31 11:59pm 
-    <td></td> <!-- project -->
-    </tr>   
-
-    <tr>
-    <td>Jan 23</td>
-    <td align=center>Th</td>
-    <td>Linear Regression in one variable</td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- homework -->
-    <td></td> <!-- project -->
-    </tr>
-
-    <tr>
-    <td>4th hour</td>
-    <td align=center>Fri</td>
-    <td>Calculus review</td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- homework -->
-    <td></td> <!-- project -->
-    </tr>
-
-        
-    <tr>
-    <td rowspan="3"><div align="center">Week 2</div></td>
-    <td>Jan 28</td>
-    <td align=center>Tu</td>
-    <td>Gradient descent</td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- homework -->
-    <td></td> <!-- project -->
-    </tr>   
-    
-    <tr>
-    <td>Jan 30</td>
-    <td align=center>Th</td>
-    <td>Linear algebra and vectorized code</td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td rowspan="4" bgcolor=pink><div align="center">
-        Homework 1
-        <br/>
-        Due: Fri Feb 7 11:59pm 
-        </div></td>
-    <td></td>
-    </tr>
-
-    <tr>
-    <td>4th hour</td>
-    <td align=center>Fri</td>
-    <td>Python/Numpy/Jupyter review</td> <!-- topic -->
-    <td></td>
-    <td></td> <!-- project -->
-    </tr>
-
-    <tr>
-    <td rowspan="3"><div align="center">Week 3</div></td>
-    <td>Feb 4</td>
-    <td align=center>Tu</td>
-    <td>Multivariate linear regression</td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td>
-    </tr>   
-
-    <tr>
-    <td>Feb 6</td>
-    <td align=center>Th</td>
-    <td></td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- hw -->
-    </tr>
-
-    <tr>
-    <td>4th hour</td>
-    <td align=center>Fri</td>
-    <td>Probability review </td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td rowspan="3" bgcolor=pink><div align="center">
-        Homework 2
-        <br/>
-        Due: Fri Feb 14 11:59pm 
-        </div></td>
-    <td></td> <!-- project -->
-    </tr>
-
-    <tr>
-    <td rowspan="3"><div align="center">Week 4</div></td>
-    <td>Feb 11</td>
-    <td align=center>Tu</td>
-    <td>Logistic Regression</td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td>
-    </tr>
-
-    <tr>
-    <td>Feb 13</td>
-    <td align=center>Th</td>
-    <td>Multiclass classification</td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- hw -->
-    </tr>
-
-    <tr>
-    <td>4th hour</td>
-    <td align=center>Fri</td>
-    <td>TBD</td> <!-- topic -->
-    <td></td> <!-- project -->
-    <td rowspan="4" bgcolor=pink><div align="center">
-        Homework 3 
-        </br>
-        Due: Feb 21 11:59pm
-        </div></td>
-    <td></td> <!-- hw -->
-    </tr>
-
-    <tr>
-    <td rowspan="3"><div align="center">Week 5</div></td>
-    <td>Feb 18</td>
-    <td align=center>Tu</td>
-    <td>Overfitting &  regularization</td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- hw -->
-    </tr>   
-    
-    <tr>
-    <td>Feb 20</td>
-    <td align=center>Th</td>
-    <td>Generalization and cross-validation <font color="red">[End Unit 1]</font></td>
-    <td></td> <!-- project -->
-    <td></td> <!-- hw -->
-    </tr>
-
-    <tr>
-    <td>4th hour</td>
-    <td align=center>Fri</td>
-    <td>Review </td> <!-- topic -->
-    <td></td> <!-- project -->
-    <td></td> <!-- hw -->
-    </tr>
-
-    <tr>
-    <td rowspan="3"><div align="center">Week 6</div></td>
-    <td>Feb 25</td>
-    <td align=center>Tu</td>
-    <td>Project descriptions and Ethics in ML</td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- reading -->
-    <td rowspan="6" bgcolor="#33FF33"><div align="center">
-        Idea Proposal
-    <br/>
-    Due: Mar 6, 11:59pm</div></td>
-    </tr>
-
-    <tr>
-    <td>Feb 27</td>
-    <td align=center>Th</td>
-    <td colspan="2"><font color="red">Celebration of Learning 1</font> (in class)</td> <!-- topic -->
-    <td></td> <!-- reading -->
-    </tr> 
-
-    <tr>
-    <td>4th hour</td>
-    <td align=center>Fri</td>
-    <td>Project brainstorm/discussion</td> <!-- topic -->
-    <td></td> <!-- project -->
-    <td rowspan="5" bgcolor=pink><div align="center">
-        Homework 4 
-        </br>
-        Due: Mar 10 11:59pm 
-        </div></td>
-    </tr>
-    </tr>  
-
-    <tr>
-    <td rowspan="3"><div align="center">Week 7</div></td>
-    <td>Mar 3</td>
-    <td align=center>Tu</td>
-    <td></td> <!-- topic -->
-    <td></td> <!-- reading -->
-    </tr>
-
-    <tr>
-    <td>Mar 5</td>
-    <td align=center>Th</td>
-    <td></td> <!-- topic -->
-    <td></td> <!-- reading -->
-    </td>
-    </tr>
-
-    <tr>
-    <td>4th hour</td>
-    <td align=center>Fri</td>
-    <td>Project brainstorm/discussion</td> <!-- topic -->
-    <td></td> <!-- project -->
-    </tr>
-
-    <tr>
-    <td rowspan="3"><div align="center">Week 8</div></td>
-    <td>Mar 10</td>
-    <td align=center>Tu</td>
-    <td>Neural nets + Backprop </td> <!-- topic -->
-<!--     BRAIN CANDY: SHOW A DEMO OF THE NEURAL NET STUFF!  -->
-
-    <td><a href="http://cs231n.github.io/optimization-2/">Standford backprop notes</a></td> <!-- reading -->
-    <td rowspan="2" bgcolor="#33FF33"><div align="center">
-        Paper Selection
-        </br>
-        Due: Mar 13 11:59pm </td>
-    </tr>
-
-    <tr>
-    <td>Mar 12</td>
-    <td align=center>Th</td>
-    <td></td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- hw -->
-    </td>
-    </tr>
-
-    <tr>
-    <td>4th hour</td>
-    <td align=center>Fri</td>
-    <td>Literature review practice</td> <!-- topic -->
-    <td></td> <!-- project -->
-    <td></td> <!-- hw -->
-    <td rowspan="4" bgcolor="#33FF33"><div align="center">
-        Literature Review
-        </br>
-        Due: Mar 27 11:59pm </td>
-    </tr> 
-
-    <tr>
-    <td rowspan="1"><div align="center">Week 9</div></td>
-    <td colspan="4" rowspan="1"><font color="grey">Mid-semester break: no class</font></td>
-    <td></td> <!-- hw -->
-    </tr>
-    
-    <tr>
-    <td rowspan="3"><div align="center">Week 10</div></td>
-    <td>Mar 24</td>
-    <td align=center>Tu</td>
-    <td></td> <!-- topic -->
-    <td></td> <!-- reading --> 
-    <td></td>
-    <td></td>
-
-    <tr>
-    <td>Mar 26</td>
-    <td align=center>Th</td>
-    <td></td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> 
-    </tr>
-
-    <tr>
-    <td>4th hour</td>
-    <td align=center>Fri</td>
-    <td></td> <!-- topic -->
-    <td></td> <!-- project -->
-    <td></td> <!-- project -->
-    <td rowspan="7" bgcolor="#33FF33"><div align="center">
-        Project Plan
-        </br>
-        Due: Apr 10 11:59pm </td>
-    </tr> 
-
-    <tr>
-    <td rowspan="3"><div align="center">Week 11</div></td>
-    
-    <td>Mar 31</td>
-    <td align=center>Tu</td>
-    <td></td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- hw -->
-    </tr>
-    
-    <tr>
-    <td>Apr 2</td>
-    <td align=center>Th</td>
-     <td></td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- hw -->
-    </tr>
-
-    <tr>
-    <td>4th hour</td>
-    <td align=center>Fri</td>
-    <td></td> <!-- topic -->
-    <td></td> <!-- project -->
-    <td></td> <!-- hw -->
-    </tr> 
-
-    <tr>
-    <td rowspan="3"><div align="center">Week 12</div></td>
-    <td>Apr 7</td>
-    <td align=center>Tu</td>
-     <td></td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- hw -->
-    </td>
-    </tr>   
-    
-    <tr>
-    <td>Apr 9</td>
-    <td align=center>Th</td>
-    <td></td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- hw -->
-    </tr> 
-
-    <tr>
-    <td>4th hour</td>
-    <td align=center>Fri</td>
-    <td></td> <!-- topic -->
-    <td></td> <!-- project -->
-    <td></td> <!-- hw -->
-    </tr>  
-    
-    <tr>
-    <td rowspan="3"><div align="center">Week 13</div></td>
-    <td><font color="grey">Apr 14</font></td>
-    <td align=center><font color="grey">Tu</font></td>
-    <td colspan="2" rowspan="1"><font color="grey">Community Day (no classes)</font></td>
-    <td></td>
-    <td rowspan="7" bgcolor="#33FF33"><div align="center">
-        Project Final Report
-        </br>
-        Due: Apr 28 11:59pm </td>
-    </tr>   
-    
-    <tr>
-    <td>Apr 16</td>
-    <td align=center>Th</td>
-    <td><font color="red">[End Unit 2]</font></td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- hw -->
-    <td></td>
-    </tr>
-
-    <tr>
-    <td>4th hour</td>
-    <td align=center>Fri</td>
-    <td>Review</td> <!-- topic -->
-    <td></td> <!-- project -->
-    <td></td> <!-- hw -->
-    </tr> 
-    
-    <tr>
-    <td rowspan="3"><div align="center">Week 14</div></td>
-    <td>Apr 21</td>
-    <td align=center>Tu</td>
-    <td>Project Work Day</td> <!-- topic -->
-    <td></td> <!-- reading -->
-    <td></td> <!-- hw -->
-    </tr> 
-    
-    <tr>
-    <td>Apr 23</td>
-    <td align=center>Th</td>
-    <td colspan="2"><font color="red">Celebration of Learning 2</font> (in class)
-    </td>
-  </td>
-    <td></td> <!-- hw -->
-    </tr>
-
-    <tr>
-    <td>4th hour</td>
-    <td align=center>Fri</td>
-    <td>Project Work Day</td> <!-- topic -->
-    <td></td> <!-- project -->
-    <td></td> <!-- hw -->
-    </tr> 
-        
-    <tr>
-    <td rowspan="2"><div align="center">Week 15</div></td>
-    <td>Apr 28</td>
-    <td align=center>Tu</td>
-    <td>Project Final Presentations</td>
-    <td></td>
-    <td></td> <!-- hw -->
-  </tr> 
-    
+<div align="center"><!-- project --></div>
+<table style="width: 776px;" border="1" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<th style="width: 41px;">week</th>
+<th style="width: 35px;">date</th>
+<th style="width: 10px;">day</th>
+<th style="width: 183px;">topic</th>
+<th style="width: 63px;">reading</th>
+<th style="width: 80px;">video</th>
+<th style="width: 83px;">homework</th>
+<!-- <th><div align="center">project</div></th> -->
+<th style="width: 56px;">project</th>
+</tr>
+<tr>
+<td style="width: 41px;" rowspan="5">
+<div align="center">Week 1</div>
+</td>
+<td style="width: 35px;" bgcolor="#AED6F1">Aug 24</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Mon</td>
+<td style="width: 183px;" bgcolor="#AED6F1">&nbsp;Introduction and Logistics</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<!-- reading -->
+<td style="width: 83px;" bgcolor="#AED6F1">&nbsp;</td>
+<td style="width: 56px;" bgcolor="#AED6F1">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 35px;">Aug 25</td>
+<td style="width: 10px;" align="center">Tue</td>
+<td style="width: 183px;">&nbsp;Linear Regression</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<!-- homework -->
+<td style="width: 83px;" rowspan="4" bgcolor="pink">
+<div align="center">
+<div align="center">Homework 0 <br /> Due: Sat Aug 29 11:59pm</div>
+</div>
+</td>
+<!-- project -->
+<td style="width: 56px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 35px;" bgcolor="#AED6F1">Aug 26</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Wed</td>
+<td style="width: 183px;" bgcolor="#AED6F1">&nbsp;Calculus Review</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<td style="width: 56px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- homework --> <!-- project --></tr>
+<tr>
+<td style="width: 35px;">Aug 27</td>
+<td style="width: 10px;" align="center">Thu</td>
+<td style="width: 183px;">&nbsp;Gradient Descent</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<!-- homework -->
+<td style="width: 56px;">&nbsp;</td>
+<!-- project --></tr>
+<tr>
+<td style="width: 35px;">Aug 28</td>
+<td style="width: 10px;" align="center">Fri</td>
+<td style="width: 183px;">&nbsp;Linear Algebra for ML</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<td style="width: 56px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 41px;" rowspan="5">
+<div align="center">Week 2</div>
+</td>
+<td style="width: 35px;" bgcolor="#AED6F1">Aug 31</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Mon</td>
+<td style="width: 183px;" bgcolor="#AED6F1">&nbsp;Python/Jupiter Review</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<!-- reading -->
+<td style="width: 83px;" bgcolor="#AED6F1">&nbsp;</td>
+<td style="width: 56px;" bgcolor="#AED6F1">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 35px;">Sep 01</td>
+<td style="width: 10px;" align="center">Tue</td>
+<td style="width: 183px;">&nbsp;Multivariate Linear Regression</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<!-- homework -->
+<td style="width: 83px;" rowspan="4" bgcolor="pink">
+<div align="center">
+<div align="center">Homework 1 <br /> Due: Sat Sep 05 11:59pm</div>
+</div>
+</td>
+<!-- project -->
+<td style="width: 56px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 35px;" bgcolor="#AED6F1">Sep 02</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Wed</td>
+<td style="width: 183px;" bgcolor="#AED6F1">&nbsp;More About Regression...</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<td style="width: 56px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- homework --> <!-- project --></tr>
+<tr>
+<td style="width: 35px;">Sep 03</td>
+<td style="width: 10px;" align="center">Thu</td>
+<td style="width: 183px;">&nbsp;Normal equations and vectorized gradient descent</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<!-- homework -->
+<td style="width: 56px;">&nbsp;</td>
+<!-- project --></tr>
+<tr>
+<td style="width: 35px;">Sep 04</td>
+<td style="width: 10px;" align="center">Fri</td>
+<td style="width: 183px;">&nbsp;Logistic Regression</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<td style="width: 56px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 41px;" rowspan="5">
+<div align="center">Week 3</div>
+</td>
+<td style="width: 35px;" bgcolor="#7F8C8D">Sep 07</td>
+<td style="width: 10px;" align="center" bgcolor="#7F8C8D">Mon</td>
+<td style="width: 183px;" bgcolor="#7F8C8D">&nbsp;Labor Day (no class)</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#7F8C8D">&nbsp;</td>
+<td style="width: 80px;" bgcolor="#7F8C8D">&nbsp;</td>
+<!-- reading -->
+<td style="width: 83px;" bgcolor="#7F8C8D">&nbsp;</td>
+<td style="width: 56px;" bgcolor="#7F8C8D">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 35px;">Sep 08</td>
+<td style="width: 10px;" align="center">Tue</td>
+<td style="width: 183px;">&nbsp;Evaluating Models</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<!-- homework -->
+<td style="width: 83px;" rowspan="4" bgcolor="pink">
+<div align="center">
+<div align="center">Homework 2 <br /> Due: Sat Sep 12 11:59pm</div>
+</div>
+</td>
+<!-- project -->
+<td style="width: 56px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 35px;" bgcolor="#AED6F1">Sep 09</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Wed</td>
+<td style="width: 183px;" bgcolor="#AED6F1">&nbsp;Probability and Logarithms Review</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<td style="width: 56px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- homework --> <!-- project --></tr>
+<tr>
+<td style="width: 35px;">Sep 10</td>
+<td style="width: 10px;" align="center">Thu</td>
+<td style="width: 183px;">&nbsp;Material Recap</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<!-- homework -->
+<td style="width: 56px;">&nbsp;</td>
+<!-- project --></tr>
+<tr>
+<td style="width: 35px;" bgcolor="#F9E79F">Sep 11</td>
+<td style="width: 10px;" align="center" bgcolor="#F9E79F">Fri</td>
+<td style="width: 183px;" bgcolor="#F9E79F">
+<p>&nbsp;Celebration of Learning 1</p>
+</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#F9E79F">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;" bgcolor="#F9E79F">&nbsp;</td>
+<td style="width: 56px;" bgcolor="#F9E79F">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 41px;" rowspan="5">
+<div align="center">Week 4</div>
+</td>
+<td style="width: 35px;" bgcolor="#AED6F1">Sep 14</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Mon</td>
+<td style="width: 183px;" bgcolor="#AED6F1">&nbsp;Project Introduction and Brainstorming</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<!-- reading -->
+<td style="width: 83px;" bgcolor="#AED6F1">&nbsp;</td>
+<td style="width: 56px;" rowspan="8" bgcolor="#A9DFBF">&nbsp;Idea Proposal <br />Due: Wed Sep 23 11:59pm</td>
+</tr>
+<tr>
+<td style="width: 35px;">Sep 15</td>
+<td style="width: 10px;" align="center">Tue</td>
+<td style="width: 183px;">&nbsp;Overfitting and Regularization</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<!-- homework -->
+<td style="width: 83px;" rowspan="4" bgcolor="pink">
+<div align="center">
+<div align="center">Homework 3 <br /> Due: Sat Sep 19 11:59pm</div>
+</div>
+</td>
+<!-- project --></tr>
+<tr>
+<td style="width: 35px;" bgcolor="#AED6F1">Sep 16</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Wed</td>
+<td style="width: 183px;" bgcolor="#AED6F1">&nbsp;Practice Reading Scientific Literature</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<!-- homework --> <!-- project --></tr>
+<tr>
+<td style="width: 35px;">Sep 17</td>
+<td style="width: 10px;" align="center">Thu</td>
+<td style="width: 183px;">&nbsp;Multi-Class Classification</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<!-- homework --> <!-- project --></tr>
+<tr>
+<td style="width: 35px;">Sep 18</td>
+<td style="width: 10px;" align="center">Fri</td>
+<td style="width: 183px;">&nbsp;KNN and Decision Trees</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+</tr>
+<tr>
+<td style="width: 41px;" rowspan="5">
+<div align="center">Week 5</div>
+</td>
+<td style="width: 35px;" bgcolor="#AED6F1">Sep 21</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Mon</td>
+<td style="width: 183px;" bgcolor="#AED6F1">&nbsp;Ethics in ML</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<!-- reading -->
+<td style="width: 83px;" bgcolor="#AED6F1">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 35px;">Sep 22</td>
+<td style="width: 10px;" align="center">Tue</td>
+<td style="width: 183px;">&nbsp;Neural Networks 1: Overview</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<!-- homework -->
+<td style="width: 83px;" rowspan="4" bgcolor="pink">
+<div align="center">
+<div align="center">Homework 4 <br /> Due: Sat Sep 26 11:59pm</div>
+</div>
+</td>
+<!-- project --></tr>
+<tr>
+<td style="width: 35px;" bgcolor="#AED6F1">Sep 23</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Wed</td>
+<td style="width: 183px;" bgcolor="#AED6F1">
+<p>&nbsp;How Does Neural Network Learn? Back Propagation</p>
+</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<!-- homework --> <!-- project --></tr>
+<tr>
+<td style="width: 35px;">Sep 24</td>
+<td style="width: 10px;" align="center">Thu</td>
+<td style="width: 183px;">&nbsp;Neural Networks 2: Regularization</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<!-- homework --> <!-- project -->
+<td style="width: 56px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 35px;">Sep 25</td>
+<td style="width: 10px;" align="center">Fri</td>
+<td style="width: 183px;">&nbsp;Neural Networks 3: Additional Neural Architectures</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<td style="width: 56px;" rowspan="4" bgcolor="#A9DFBF">&nbsp;Project Plan Due: Wed Sep 30 11:59pm</td>
+</tr>
+<tr>
+<td style="width: 41px;" rowspan="5">
+<div align="center">Week 6</div>
+</td>
+<td style="width: 35px;" bgcolor="#AED6F1">Sep 28</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Mon</td>
+<td style="width: 183px;" bgcolor="#AED6F1">MorningTea: Project Plan&nbsp;</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<!-- reading -->
+<td style="width: 83px;" bgcolor="#AED6F1">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 35px;">Sep 29</td>
+<td style="width: 10px;" align="center">Tue</td>
+<td style="width: 183px;">Kernel Trick and Support Vector Machines</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<!-- homework -->
+<td style="width: 83px;">&nbsp;</td>
+<!-- project --></tr>
+<tr>
+<td style="width: 35px;" bgcolor="#AED6F1">Sep 30</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Wed</td>
+<td style="width: 183px;" bgcolor="#AED6F1">Unsupervised Learning and K-means clustering</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<td style="width: 56px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- homework --> <!-- project --></tr>
+<tr>
+<td style="width: 35px;">Oct 01</td>
+<td style="width: 10px;" align="center">Thu</td>
+<td style="width: 183px;">&nbsp;Bayesian Inference and Gaussian Mixture Models</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<td style="width: 83px;">&nbsp;</td>
+<!-- homework -->
+<td style="width: 56px;">&nbsp;</td>
+<!-- project --></tr>
+<tr>
+<td style="width: 35px;">Oct 02</td>
+<td style="width: 10px;" align="center">Fri</td>
+<td style="width: 183px;">&nbsp;Expectation Maximization</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<td style="width: 83px;">&nbsp;</td>
+<td style="width: 56px;" rowspan="4" bgcolor="#A9DFBF">
+<div align="center">
+<div align="center">Project Progress Report&nbsp;&nbsp;<br /> Due: Wed Oct 07 11:59pm</div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 41px;" rowspan="5">
+<div align="center">Week 7</div>
+</td>
+<td style="width: 35px;" bgcolor="#AED6F1">Oct 05</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Mon</td>
+<td style="width: 183px;" bgcolor="#AED6F1">&nbsp;MorningTea: Project Updates</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<!-- reading -->
+<td style="width: 83px;" bgcolor="#AED6F1">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 35px;">Oct 06</td>
+<td style="width: 10px;" align="center">Tue</td>
+<td style="width: 183px;">&nbsp;Principal Components Analysis</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<!-- homework -->
+<td style="width: 83px;">&nbsp;</td>
+<!-- project --></tr>
+<tr>
+<td style="width: 35px;" bgcolor="#AED6F1">Oct 07</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Wed</td>
+<td style="width: 183px;" bgcolor="#AED6F1">&nbsp;MorningTea: Project Workshop</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<td style="width: 83px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- homework --> <!-- project --></tr>
+<tr>
+<td style="width: 35px;">Oct 08</td>
+<td style="width: 10px;" align="center">Thu</td>
+<td style="width: 183px;">&nbsp;Bayesian Classification</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<td style="width: 83px;">&nbsp;</td>
+<!-- homework -->
+<td style="width: 56px;">&nbsp;</td>
+<!-- project --></tr>
+<tr>
+<td style="width: 35px;">Oct 09</td>
+<td style="width: 10px;" align="center">Fri</td>
+<td style="width: 183px;">&nbsp;Reinforcement Learning</td>
+<!-- topic -->
+<td style="width: 63px;">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;">video lecture</td>
+<td style="width: 83px;">&nbsp;</td>
+<td style="width: 56px;" rowspan="4" bgcolor="#A9DFBF">
+<div align="center">
+<div align="center">Project Final Report&nbsp;&nbsp;<br /> Due: Wed Oct 14 11:59pm</div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 41px;" rowspan="4">
+<div align="center">Week 8</div>
+</td>
+<td style="width: 35px;" bgcolor="#AED6F1">Oct 12</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Mon</td>
+<td style="width: 183px;" bgcolor="#AED6F1">Last Class: Material Recap 2</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<!-- reading -->
+<td style="width: 83px;" bgcolor="#AED6F1">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 35px;" bgcolor="#7F8C8D">Oct 13</td>
+<td style="width: 10px;" align="center" bgcolor="#7F8C8D">Tue</td>
+<td style="width: 183px;" bgcolor="#7F8C8D">Reading Day (no class)</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#7F8C8D">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;" bgcolor="#7F8C8D">&nbsp;</td>
+<!-- homework -->
+<td style="width: 83px;" bgcolor="#7F8C8D">&nbsp;</td>
+<!-- project --></tr>
+<tr>
+<td style="width: 35px;" bgcolor="#F9E79F">Oct 14</td>
+<td style="width: 10px;" align="center" bgcolor="#F9E79F">Wed</td>
+<td style="width: 183px;" bgcolor="#F9E79F">
+<p>Celebration of Learning 2</p>
+</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#F9E79F">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;" bgcolor="#F9E79F">&nbsp;</td>
+<td style="width: 83px;" bgcolor="#F9E79F">&nbsp;</td>
+<!-- homework --> <!-- project --></tr>
+<tr>
+<td style="width: 35px;" bgcolor="#AED6F1">Oct 15</td>
+<td style="width: 10px;" align="center" bgcolor="#AED6F1">Thu</td>
+<td style="width: 183px;" bgcolor="#AED6F1">Project Presentation Party</td>
+<!-- topic -->
+<td style="width: 63px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- reading -->
+<td style="width: 80px;" bgcolor="#AED6F1">zoom recording</td>
+<td style="width: 83px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- homework -->
+<td style="width: 56px;" bgcolor="#AED6F1">&nbsp;</td>
+<!-- project --></tr>
+<tr><!-- hw --></tr>
+</tbody>
 </table>
-
-<!-- Additional resources  -->
-<hr/>
+<!-- Additional resources  --><hr />
 <h1>Project</h1>
-Projects will focus on ``impactful" applications of machine learning focused on three areas: (1) health, (2) education, or (3) climate change. See more details on the project 
-<a href="spring2020_project.html">here</a>. 
-
-<!-- Additional resources  -->
-<hr/>
+Projects will focus on ``impactful" applications of machine learning focused on three areas: (1) health, (2) education, or (3) climate change. See more details on the project <a href="spring2020_project.html">here</a>. <!-- Additional resources  --><hr />
 <h1>Additional Resources</h1>
-    <li>
-        <a href="http://cs229.stanford.edu/syllabus.html">Course handouts</a> from Stanford CS 229 by Andrew Ng</li>
-
-<!-- Additional resources  -->
-<hr/>
+<ul>
+<li><a href="http://cs229.stanford.edu/syllabus.html">Course handouts</a> from Stanford CS 229 by Andrew Ng</li>
+</ul>
+<!-- Additional resources  --><hr />
 <h1>Scribe Notes</h1>
-    Scribe notes. 
-
-
-<!-- Inclusion and Equity -->
-<hr/>
+Scribe notes. <!-- Inclusion and Equity --><hr />
 <h1>Inclusion and Equity</h1>
-
-Different learning styles (quiet)
-
-<!-- Honor Code -->
-<hr/>
+Different learning styles (quiet) <!-- Honor Code --><hr />
 <h1>Honor Code</h1>
-
-TODO: put in Mt. Holyoke's honor code here!
-
-<!-- Honor Code -->
-<hr/>
+TODO: put in Mt. Holyoke's honor code here! <!-- Honor Code --><hr />
 <h1>Communication Policy</h1>
-Email returned 9-5 Mon-Fri
-
-
-<!-- </ul>  -->          
-<!-- </div> -->
-<!-- closes main-->
-    </div><!-- closes main container-->
-</body>
-</html>
+Email returned 9-5 Mon-Fri <!-- </ul>  --> <!-- </div> --> <!-- closes main--></div>
+<!-- closes main container-->
